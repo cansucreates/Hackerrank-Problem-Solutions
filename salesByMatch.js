@@ -22,7 +22,7 @@ function sockMerchant(n, ar) {
   let pairs = 0;
   let colors = {};
 
-  for (let i = 0; i < n - 1; i++) {
+  for (let i = 0; i < n; i++) {
     let color = ar[i];
     if (!colors[color]) {
       colors[color] = 1;
