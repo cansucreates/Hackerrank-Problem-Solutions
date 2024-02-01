@@ -15,10 +15,7 @@ function arrayRange(i,j) {
     }
     return arr; }
 
- // the main function
- 
  let beautifulDaysCounter = 0;
-
  let theDays = arrayRange(i,j);
 
  for(let i = 0; i < theDays.length; i++) {
