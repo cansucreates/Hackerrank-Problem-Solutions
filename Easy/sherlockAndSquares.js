@@ -2,12 +2,14 @@
 //  He will provide a starting and ending value that describe a range of integers, 
 // inclusive of the endpoints. Sherlock must determine the number of square integers within that range.
 
-function squares(a,b) {
+function squares(a, b) {
     let count = 0;
-    for (let i = a; i <= b; i++) {
-        if (Math.sqrt(i) % 1 === 0) {
-            count++
+    let i = 1;
+    while (i * i <= b) {
+        if (i * i >= a) {
+            count++;
         }
+        i++;
     }
     return count;
 }
