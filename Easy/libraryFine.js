@@ -1,4 +1,4 @@
-// not might be ideal, but thats what i came up with
+// might not be ideal, but thats what i came up with
 
 function libraryFine(d1, m1, y1, d2, m2, y2) {
     let fine = 0;
