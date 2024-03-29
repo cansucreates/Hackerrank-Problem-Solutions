@@ -5,17 +5,17 @@
 function repeatedString(s,n) {
     let count = 0;
     let aCount = 0;
-    let aCountExtra = 0;
-    let extra = n % s.length;
+    let aCountExtra = 0; // extra a's
+    let extra = n % s.length; // extra characters
     for (let i = 0; i < s.length; i++) {
         if (s[i] === 'a') {
             aCount++;
-            if (i < extra) {
+            if (i < extra) { // if there are extra characters
                 aCountExtra++;
             }
         }
     }
-    count = Math.floor(n / s.length) * aCount + aCountExtra;
+    count = Math.floor(n / s.length) * aCount + aCountExtra; // count of a's
     return count;
 
 }
