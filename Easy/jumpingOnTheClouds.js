@@ -10,7 +10,7 @@
 // jump from c[4] to c[6].
 // c[6] = 1 (thunderhead) 96 - 1 - 2 = 93.
 // jump from c[6] to c[8] (does not exist). we are on c[0]. which is cumulus
-// c[0] = 0 (cumulus). 93 - 1 = 92 energy left.
+// c[0] = 0 (cumulus). 93 - 1 = 92 energy left..
 
 function jumpingOnTheClouds(c, k) {
     let energy = 100;
