@@ -12,7 +12,6 @@ function nonDivisibleSubset(k, s) {
             result += Math.max(count[i], count[k - i]);
         }
     }
-    
     if (k % 2 === 0) {
         result++;
     }
