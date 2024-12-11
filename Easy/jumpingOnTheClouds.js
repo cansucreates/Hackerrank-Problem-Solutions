@@ -5,11 +5,22 @@
 
 
 function jumpingOnClouds(c) {
-    for (let i = 1; i < c.length - 1; i++) {
-        // start from second indis
-        // if indis[1] is 0 and the second indis is 0 you can jump twice
-        // if indis[1] is not 0  
+    let jumpCount = 0;
+    let currentPosition = 0;
+
+    // if we can jump two position
+    while (currentPosition < c.length - 1) {
+        if (currentPosition + 2 < c.length && c[currentPosition + 2] === 0) {
+            currentPosition += 2;
+            jumpCount++;
+        }
+        else {
+            currentPosition += 1; 
+            jumpCount++;
+        }
     }
+    return jumpCount;
+
 }
 
 
